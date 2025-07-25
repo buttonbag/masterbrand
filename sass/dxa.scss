@@ -1,0 +1,182 @@
+
+// global
+.h1 {
+  font-size: 65px;
+  font-weight: 800;
+  line-height: .9;
+  color: #0057b7;
+  margin: 0;
+  letter-spacing: 0;
+}
+// topnav
+// hero
+.subtext {
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: #0057b7;
+}
+// stats
+// video
+.video_container {
+  height: 560px !important;
+}
+// real world
+.real_world .h1 {
+  color: #fff;
+}
+// slider
+.slide {
+    span {
+      display: block;
+    width: 100%;
+    padding: 10px 20px;
+    min-height: 140px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    color: #0057b7;
+  }
+}
+// form
+// ready container
+// footer
+footer {
+font-size: 1.8rem;
+}
+
+footer h3 {
+font-size: 3rem;
+}
+
+footer .social_icons, footer .copyright {
+font-size: 1.3rem;
+}
+
+footer a:hover {
+color: #dedede;
+} 
+
+@media (max-width: 480px) {
+  // global
+  h1, h3, .h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  div {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .btn-primary {
+    font-size: 1.8rem;
+    min-width: auto;
+  }
+  // topnav
+  #logo_horz {
+    width: 240px;
+  }
+  // hero
+  .mobile_hero {
+    height: 280px;
+    background-position: center;
+  }
+  .subtext {
+    font-size: 2rem;
+  }
+
+  // stats
+  .stats div > div:first-child {
+    font-size: 4rem;
+  }
+  .stats > div {
+    margin: 1.5rem auto;
+  }
+  // video
+  .video_container {
+    height: 260px !important;
+  }
+  // real world
+  .real_world {
+    margin-top: 0;
+  }
+  // slider
+  .slide {
+    span {
+      font-size: 1.5rem; 
+      min-height: 60px;
+    }
+    .slider_nav {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+    a {
+      margin: 0 auto;
+      width: 40px;
+      height: 40px;
+      background-size: 50% auto;
+      background-position: center;    
+    }
+    }
+  }
+    // form
+    .form_inst { 
+      font-size: 2rem;
+    }
+    // ready container
+    .ready_container {
+        font-size: 2rem !important;
+        line-height: 1.2; 
+    }  
+  // footer
+
+  /*   alumni */
+  .alumni_container * {
+  font-size: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  // global
+  // topnav
+  // hero
+  .subtext {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -.03em;
+    padding: 15px 0;
+  }  
+  // stats
+  // video
+  // real world
+  // slider
+  .slide {
+    span {
+    max-width: 70%;
+    min-height: 85px;
+  }}
+  // form
+  // ready container
+  // footer
+}
+@media (min-width: 992px) {
+  // global
+  // topnav
+  // hero
+  // stats
+  // video
+  // real world
+  // slider
+  .slide {
+    span {
+    max-width: 50%;
+  }
+}
+  // form
+  // ready container
+  // footer
+}
+

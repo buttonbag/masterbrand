@@ -1,0 +1,152 @@
+.h1 {
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 0.9;
+  color: #0057b7;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.subtext {
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #0057b7;
+}
+
+.video_container {
+  height: 560px !important;
+}
+
+.real_world .h1 {
+  color: #fff;
+}
+
+.slide span {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  min-height: 140px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: #0057b7;
+}
+
+footer {
+  font-size: 1.8rem;
+}
+
+footer h3 {
+  font-size: 3rem;
+}
+
+footer .social_icons, footer .copyright {
+  font-size: 1.3rem;
+}
+
+footer a:hover {
+  color: #dedede;
+}
+
+@media (max-width: 480px) {
+  h1, h3, .h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  div {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .btn-primary {
+    font-size: 1.8rem;
+    min-width: auto;
+  }
+
+  #logo_horz {
+    width: 240px;
+  }
+
+  .mobile_hero {
+    height: 280px;
+    background-position: center;
+  }
+
+  .subtext {
+    font-size: 2rem;
+  }
+
+  .stats div > div:first-child {
+    font-size: 4rem;
+  }
+
+  .stats > div {
+    margin: 1.5rem auto;
+  }
+
+  .video_container {
+    height: 260px !important;
+  }
+
+  .real_world {
+    margin-top: 0;
+  }
+
+  .slide span {
+    font-size: 1.5rem;
+    min-height: 60px;
+  }
+  .slide .slider_nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .slide .slider_nav a {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background-size: 50% auto;
+    background-position: center;
+  }
+
+  .form_inst {
+    font-size: 2rem;
+  }
+
+  .ready_container {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  /*   alumni */
+  .alumni_container * {
+    font-size: 30px;
+  }
+}
+@media (min-width: 576px) {
+  .subtext {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    padding: 15px 0;
+  }
+
+  .slide span {
+    max-width: 70%;
+    min-height: 85px;
+  }
+}
+@media (min-width: 992px) {
+  .slide span {
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=dxa.css.map */
