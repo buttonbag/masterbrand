@@ -1,6 +1,48 @@
+.rethink-sans-400 {
+  font-family: "Rethink Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rethink-sans-600 {
+  font-family: "Rethink Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rethink-sans-800 {
+  font-family: "Rethink Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.newsreader-400 {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.newsreader-600 {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.newsreader-800 {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 body {
   background: #fff;
-  font-family: "Tenso", sans-serif;
+  font-family: "Rethink Sans", sans-serif;
 }
 
 /* Globals */
@@ -449,6 +491,7 @@ footer h3 {
 @media (min-width: 1200px) {
   .hero {
     min-height: 420px;
+    max-width: 1400px;
   }
 }
 .h1 {
