@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .rethink-sans-400 {
   font-family: "Rethink Sans", sans-serif;
   font-optical-sizing: auto;
@@ -519,15 +520,42 @@ footer h3 {
   color: #fff;
 }
 
-.slide span {
+.slide .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+  position: absolute;
+  width: 355.82px;
+  left: 0;
+  top: 0;
+  background: #003da5;
+  border-radius: 45px 0px;
+  margin: 30px 15px;
+  color: #fff;
+  text-align: center;
+}
+.slide .quote .dbl-quote::before {
+  content: "“";
+  color: #0072ce;
+  font-size: 5rem;
+  font-family: "Newsreader", sans-serif;
+  font-weight: 800;
   display: block;
-  width: 100%;
-  padding: 10px 20px;
-  min-height: 140px;
-  font-size: 30px;
-  font-weight: 600;
+  height: 32px;
   line-height: 1;
-  color: #003da5;
+  vertical-align: bottom;
+}
+.slide .quote .quote-content {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.slide .quote .quote-by-line {
+  font-size: 1.2rem;
 }
 
 footer a:hover {
