@@ -219,10 +219,39 @@ footer h3 {
 /* Carousel */
 .carousel {
     width: 100%;
-}
-.slide {
-    background: $light-gray;
-}
+    .carousel-item {
+        height: 390px;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+        .carousel-control-container {
+            position: absolute;
+            height: 32px;
+            width: 75px;
+            bottom: 25px;
+            right: 35px;
+
+            button {
+                display: inline-block;
+                width: 32px;
+                border-radius: 50%;
+                border: 1px solid $primary-blue;
+                // margin-left: 20px;
+                transition: all .25s ease-out;
+                background-image: url(../img/slider_nav_arrow.svg);
+                background-repeat: no-repeat;
+                background-size: 65%;
+                background-position: center;
+                    background-color: #fff;
+                    opacity: 1;
+                
+            }
+            .carousel-control-next {
+                transform: scale(-1);
+            }
+        }}
+
 .slide h3 {
     width: 100%;
     padding: 10px 20px;
@@ -411,32 +440,78 @@ h3 {
     bottom: 0;
 }
 }
-/* Small - Med Screens */
-@media (min-width: 480px) and (max-width: 768px) {
-
-}
-/* Med - Large Screens */
-@media (min-width: 768px) and (max-width: 991px) {
-.slide h3 {
-    max-width: 60%;
-}
-}
-/* Large Monitors */
-@media (min-width: 992px) {
-.alumni_container {
-    font-size: 30px;
-}
-.slide h3 {
-    max-width: 50%;
-}
-}
 /* X Large Monitors */
 @media (min-width: 1200px) {
-.hero {
-    min-height: 420px;
-    max-width: 1400px;
+    .hero {
+        min-height: 420px;
+        max-width: 1400px;
+    }
 }
+
+/* Large Monitors */
+@media (min-width: 992px) {
+    .alumni_container {
+        font-size: 30px;
+    }
+
+    .slide h3 {
+        max-width: 50%;
+    }
 }
+
+/* Med - Large Screens */
+@media (max-width: 991px) {
+    .slide h3 {
+        max-width: 60%;
+    }
+}
+
+/* Med Screens */
+@media (max-width: 768px) {
+    .carousel {
+        .carousel-item {
+            height: 660px;
+            background-size: 300%;
+
+            .quote {
+                margin: 20rem auto 0;
+                position: relative;
+            }
+        }
+
+        .carousel-control-container {
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+    .carousel {
+        .carousel-item {
+            height: 400px;
+            background-size: 265%;
+
+            .quote {
+                margin: 10rem auto 0;
+                position: relative;
+                width: 100%;
+                padding: 25px;
+
+                .dbl-quote::before {
+                    font-size: 3rem;
+                    height: 12px;
+                }
+
+                .quote-content {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
 //end original styles
 
 
@@ -471,6 +546,7 @@ h3 {
 }
 // slider
 .slide {
+    // height: 390px;
     .quote {
         display: flex;
         flex-direction: column;

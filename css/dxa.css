@@ -244,9 +244,34 @@ footer h3 {
 .carousel {
   width: 100%;
 }
-
-.slide {
-  background: #eff0f0;
+.carousel .carousel-item {
+  height: 390px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.carousel .carousel-control-container {
+  position: absolute;
+  height: 32px;
+  width: 75px;
+  bottom: 25px;
+  right: 35px;
+}
+.carousel .carousel-control-container button {
+  display: inline-block;
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid #003da5;
+  transition: all 0.25s ease-out;
+  background-image: url(../img/slider_nav_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  background-color: #fff;
+  opacity: 1;
+}
+.carousel .carousel-control-container .carousel-control-next {
+  transform: scale(-1);
 }
 
 .slide h3 {
@@ -470,11 +495,11 @@ footer h3 {
     bottom: 0;
   }
 }
-/* Small - Med Screens */
-/* Med - Large Screens */
-@media (min-width: 768px) and (max-width: 991px) {
-  .slide h3 {
-    max-width: 60%;
+/* X Large Monitors */
+@media (min-width: 1200px) {
+  .hero {
+    min-height: 420px;
+    max-width: 1400px;
   }
 }
 /* Large Monitors */
@@ -487,11 +512,45 @@ footer h3 {
     max-width: 50%;
   }
 }
-/* X Large Monitors */
-@media (min-width: 1200px) {
-  .hero {
-    min-height: 420px;
-    max-width: 1400px;
+/* Med - Large Screens */
+@media (max-width: 991px) {
+  .slide h3 {
+    max-width: 60%;
+  }
+}
+/* Med Screens */
+@media (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 660px;
+    background-size: 300%;
+  }
+  .carousel .carousel-item .quote {
+    margin: 20rem auto 0;
+    position: relative;
+  }
+  .carousel .carousel-control-container {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+/* Small Screens */
+@media (max-width: 480px) {
+  .carousel .carousel-item {
+    height: 400px;
+    background-size: 265%;
+  }
+  .carousel .carousel-item .quote {
+    margin: 10rem auto 0;
+    position: relative;
+    width: 100%;
+    padding: 25px;
+  }
+  .carousel .carousel-item .quote .dbl-quote::before {
+    font-size: 3rem;
+    height: 12px;
+  }
+  .carousel .carousel-item .quote .quote-content {
+    font-size: 1.2rem;
   }
 }
 .h1 {
