@@ -138,10 +138,15 @@ footer h3 {
 .copyright {
     border-top: 1px solid $white;
 }
-/* Hero */ 
-.hero {
+section {
     max-width: 1440px;
     margin: auto;
+    display: flex;
+    padding: 0 9rem;
+}
+
+/* Hero */ 
+.hero {
     min-height: 420px;
     display: flex;
     align-items: center;
@@ -159,8 +164,6 @@ footer h3 {
 
 // intro-blue-box
 .intro-blue-box {
-    max-width: 1440px;
-    margin: auto;
     background: $primary-blue;
 }
 
