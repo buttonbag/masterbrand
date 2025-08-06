@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(/css/custom-video-container.css);
 .rethink-sans-400 {
   font-family: "Rethink Sans", sans-serif;
   font-optical-sizing: auto;
@@ -711,6 +712,17 @@ footer a:hover {
   .slide span {
     max-width: 50%;
   }
+}
+.video-section {
+  background: #00205b;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #fff;
+}
+.video-section .video-container {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=dxa.css.map */

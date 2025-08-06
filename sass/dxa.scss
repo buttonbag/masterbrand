@@ -743,3 +743,16 @@ color: #dedede;
   // footer
 }
 
+@import url(/css/custom-video-container.css);
+.video-section {
+    background: $secondary-blue;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: $white;
+
+    .video-container {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+    }
+}

@@ -88,6 +88,42 @@
 <!-- end stats -->  
 
 <!-- video container -->
+<section class="video-section">
+  <div class="container">
+
+    <div class="row">
+      <div class="video-container">
+        <div id="player"></div>
+        <img id="overlayImage" class="overlay-image" src="" alt="Video Overlay">
+        <button id="customPlay" class="custom-play-button">&nbsp;&#9658;</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat adipisci omnis eius non voluptatem, eveniet hic dignissimos consequatur? Qui, repellat. Perspiciatis deserunt explicabo dolorem doloremque iste culpa sunt quas!
+      </div>
+      <div class="col video-selector-wrapper">
+        <div class="video-selector">
+          <img class="video-thumbnail" src="img/video/placeholder1.jpg" data-video-id="3qGmsIYzdkY"
+            data-overlay="img/video/vid1.jpg" alt="Video 1">
+          <img class="video-thumbnail" src="img/video/placeholder2.jpg" data-video-id="7cZVXgiYp5k"
+            data-overlay="img/video/vis2.jpg" alt="Video 2">
+          <img class="video-thumbnail" src="img/video/placeholder3.jpg" data-video-id="yVCvHRqvS44"
+            data-overlay="img/video/vid3.jpg" alt="Video 3">
+          <img class="video-thumbnail" src="img/video/placeholder4.jpg" data-video-id="bsZd1MjfjD8"
+            data-overlay="img/video/vid4.jpg" alt="Video 4">
+          <img class="video-thumbnail" src="img/video/placeholder5.jpg" data-video-id="w6VbTxymt9s"
+            data-overlay="img/video/vid.jpg" alt="Video 5">
+        </div>
+        <div class="arrow-controls">
+          <div class="scroll-arrow left-arrow">&#8592;</div>
+          <div class="scroll-arrow right-arrow">&#8594;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- end video container -->
 
 <!-- image with text -->
@@ -539,5 +575,8 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </footer>
+
+<script src="js/custom-video-container.js"></script>
+
 </body>
 </html>
