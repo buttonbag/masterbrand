@@ -743,7 +743,7 @@ color: #dedede;
   // footer
 }
 
-@import url(/css/custom-video-container.css);
+@import "../css/custom-video-container";
 .video-section {
     background: $secondary-blue;
     padding-top: 4rem;
