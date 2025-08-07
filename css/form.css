@@ -7,7 +7,7 @@
   font-size: 22px;
   font-weight: 700;
   margin: 0 auto 20px;
-  color: #0057b7;
+  color: #003da5;
 }
 .show_toggle label {
   padding: 5px 15px 5px 0px;
@@ -15,7 +15,8 @@
 }
 
 .slate-form {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 800;
   min-height: 320px;
 }
 .slate-form input, .slate-form select, .slate-form textarea {
@@ -31,7 +32,7 @@
   min-height: 160px;
 }
 .slate-form label {
-  color: #0057b7;
+  color: #003da5;
 }
 .slate-form .form_text {
   display: block;
@@ -50,6 +51,38 @@
 .slate-form .form_response label, .slate-form .form_response input {
   width: auto !important;
   margin: 0 5px 0 0;
+}
+
+.form-section {
+  background: #eff0f0;
+}
+.form-section h1 {
+  color: #003da5;
+}
+
+.form_inst {
+  color: #003da5;
+  font-size: 30px;
+}
+
+.slate-form input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #003da5;
+  width: 100%;
+}
+.slate-form label {
+  color: #003da5;
+  font-size: 22px;
+}
+.slate-form button {
+  background: #003da5;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-right: 20px;
+  padding: 8px 30px;
 }
 
 @media (min-width: 992px) {

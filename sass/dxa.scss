@@ -329,36 +329,10 @@ section {
     width: 100%;
     height: auto;
 }
+
 /* Form */
-.form_container {
-    background: $light-gray;
-}
-.form_container h1 {
-    color: $primary-blue;
-}
-.form_inst {
-    color: $primary-blue;
-    font-size: $mobile-subhead;
-}
-.slate-form input {
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid $primary-blue;
-    width: 100%;
-}
-.slate-form label {
-    color: rgba(31, 90, 169, .7);
-    font-size: 22px;
-}
-.slate-form button {
-    background: $primary-blue;
-    color: $white;
-    font-size: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-right: 20px;
-    padding: 8px 30px;
-}
+@import "form";
+
 .logo_bar {
     background: $primary-blue;
 }

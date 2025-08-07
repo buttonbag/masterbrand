@@ -19,7 +19,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 <!-- dxa styles -->
-<link rel="stylesheet" href="css/form.css">
 <link rel="stylesheet" href="css/dxa.css">
 
 </head>
@@ -288,21 +287,21 @@
 <!-- end alumni -->  
 
 <!-- slate form -->
-  <section class="form_container">
-    <div class="container-fluid py-5" id="requestform">
-      <div class="container">
-        <div class="row">
+  <section class="form-section">
+    <div class="container-fluid py-5 form_container" id="requestform">
+      <div class="row">
+        <div class="container">
           <div class="col-md-7 p-0">
-            <h2 class="h1">Learn more about DePaul University. </h2>
+            <h1>Learn more about DePaul University. </h1>
             <div class="form_inst pb-4">Fill out the form to get started.</div>
           </div>
         </div>        
       </div>
-      <div class="container">
-        <div class="row">
+      <div class="row">
+        <div class="container">
           
 <!-- Radio buttons to toggle content -->
-			<div class="show_toggle">
+			<div class="d-flex flex-wrap show_toggle">
         <div class="col-12 px-0 py-2">I am a:</div>
         <div>
             <input type="radio" id="option1" name="toggle" onclick="showForm('undergrad');">
@@ -462,16 +461,13 @@
 		//-----------
 		var formID, formPath, tyPath, header;
 		if (formName == "undergrad") {
-			//formID = "fbde168b-dc8e-47a9-ad20-b0d5e1072a29";
-			formID = "37bdf204-5e7e-481f-9a33-f7577f333cea";
+			formID = "fbde168b-dc8e-47a9-ad20-b0d5e1072a29";
 			formPath = "https://connect.depaul.edu/register/?id=" + formID;
 		} else if (formName == "parent") {
-			//formID = "47b09ad5-8570-485b-93ea-8293680dcb6a";
-			formID = "76961fa9-9d2f-445f-bd08-ce4d07e89c3c";
+			formID = "47b09ad5-8570-485b-93ea-8293680dcb6a";
 			formPath = "https://connect.depaul.edu/register/?id=" + formID;
 		} else {//grad
-			//formID = "9ecccbeb-10a2-4b70-b4c3-81d390e096b8";
-			formID = "39d2e839-053b-4d3a-b9c4-b8534e9da54f";
+			formID = "9ecccbeb-10a2-4b70-b4c3-81d390e096b8";
 			formPath = "https://grad.depaul.edu/register/?id=" + formID;
 		}
 		

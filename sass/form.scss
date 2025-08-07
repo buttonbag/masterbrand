@@ -1,3 +1,10 @@
+//colors
+$primary-blue: #003da5;
+$secondary-blue: #00205b;
+$light-blue: #0072ce;
+$white: #fff;
+$light-gray: #eff0f0;
+$mobile-subhead: 30px;
 
 #error-placeholder {
     font-size: 2.2rem;
@@ -8,7 +15,7 @@
   font-size: 22px;
   font-weight: 700;
   margin: 0 auto 20px;
-  color: #0057b7;
+  color: $primary-blue;
   
   label {
   padding: 5px 15px 5px 0px;
@@ -16,7 +23,8 @@
   }
 }
 .slate-form {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 800;
   min-height: 320px;
 
   input, select, textarea {
@@ -35,7 +43,7 @@
   }
 
   label {
-    color: #0057b7;
+    color: $primary-blue;
   }
 
   .form_text {
@@ -57,6 +65,40 @@
     }
   }
     
+}
+
+.form-section {
+    background: $light-gray;
+    h1 {
+        color: $primary-blue;
+    }
+}
+.form_inst {
+    color: $primary-blue;
+    font-size: $mobile-subhead;
+}
+.slate-form {
+  input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $primary-blue;
+    width: 100%;
+  }
+
+  label {
+    color: $primary-blue;
+    font-size: 22px;
+  }
+
+  button {
+    background: $primary-blue;
+    color: $white;
+    font-size: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-right: 20px;
+    padding: 8px 30px;
+  }
 }
 
 @media (min-width: 992px) {
