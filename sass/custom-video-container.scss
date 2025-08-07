@@ -1,4 +1,6 @@
-    .video-container {
+.video-section {
+  * {color: $white;}
+      .video-container {
       position: relative;
       width: 560px;
       height: 315px;
@@ -76,7 +78,6 @@
 }
 
 .video-selector::-webkit-scrollbar {
-  display: none;
 }
 
 .arrow-controls {
@@ -84,7 +85,7 @@
   display: flex;
   padding: 0 10px;
   gap: 20px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .scroll-arrow {
@@ -95,4 +96,17 @@
   cursor: pointer;
   user-select: none;
   border-radius: 4px;
+}
+
+
+    background: $secondary-blue;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: $white;
+
+    .video-container {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+    }
 }
