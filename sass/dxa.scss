@@ -51,36 +51,29 @@ $mobile-subhead: 30px;
 }
 
 //original styles
-html {
-
-}
-body {
+html, body {
     background: $white;
     font-family: "Rethink Sans", sans-serif;
 }
 /* Globals */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
     color: $primary-blue;
-}
-h1 {
-    font-size: 60px;
     font-weight: 800;
-    line-height: 1;
 }
-h2 {
-    // padding: 15px 0;
-    // font-size: 30px;
-    // font-weight: 800;
-    // line-height: 1em;
-    // letter-spacing: -.03em; 
+h1, .h1 {
+    font-size: 65px;
 }
-h3 {
-    padding: 25px 0 0 0;
+h2, .h2 {
     font-size: 45px;
-    font-weight: 800;
-    line-height: 1em;
-    letter-spacing: -.03em;
 }
+h3, .h3 {
+    font-size: 32px;
+}
+h4, .h4 {
+    font-size: 30px;
+}
+
 .btn {
     border: 0;
     font-weight: 300;
@@ -196,10 +189,11 @@ min-height: 420px;
 // intro-blue-box
 .intro-blue-box {
     background: $primary-blue;
-    h2 {
-        font-size: 2.8rem;
-        font-weight: 800;
+    font-size: 22px;
+    h2, p {
+        margin-bottom: 30px;
     }
+    p {padding-right: 6rem;}
 }
 
 #video_poster {
@@ -222,36 +216,7 @@ min-height: 420px;
  > div > div:last-child {
     font-size: 18px;
 }}
-/* Real World Section */
-.real_world {
-    position: relative;
-    margin-top: 40vw;
-    background: $primary-blue;
-    font-size: $mobile-subhead;
-    line-height: 1em;
-    color: $white;
-}
-.real_world h1 {
-    color: $white;
-}
-#buildings_container {
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-}
-#realworld_buildings_mobile {
-    position: relative;
-    bottom: 30vw;
-    right: 0;
-    margin-bottom: -30vw;
-    width: 100vw;
-    max-width: 100%;
-    padding-top: 0vw;
-}
-.buildings_mobile {
-    margin-left: -15px;
-    margin-right: -15px;
-}
+
 /* Ready for Section */
 .ready_container {
     font-size: $mobile-subhead;
@@ -480,6 +445,16 @@ min-height: 420px;
 /* Med Screens */
 @media (max-width: 768px) {
 
+h1, .h1 {
+    font-size: 45px;
+}
+h2, .h2 {
+    font-size: 32px;
+}
+h3, .h3 {
+    font-size: 28px;
+}
+
     .hero {
     
         background-size: 380%;
@@ -553,14 +528,14 @@ min-height: 420px;
 
 
 // global
-.h1 {
-  font-size: 65px;
-  font-weight: 800;
-  line-height: .9;
-  color: $primary-blue;
-  margin: 0;
-  letter-spacing: 0;
-}
+// .h1 {
+//   font-size: 65px;
+//   font-weight: 800;
+//   line-height: .9;
+//   color: $primary-blue;
+//   margin: 0;
+//   letter-spacing: 0;
+// }
 // topnav
 // hero
 .subtext {
@@ -652,12 +627,12 @@ color: #dedede;
 
 @media (max-width: 768px) {
   // global
-  h1, h3, .h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
+//   h1, h3, .h1 {
+//     font-size: 2.5rem;
+//   }
+//   h2 {
+//     font-size: 1.2rem;
+//   }
   div {
     font-size: 16px;
     line-height: 1.2;

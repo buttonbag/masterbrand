@@ -61,28 +61,32 @@
   font-style: normal;
 }
 
-body {
+html, body {
   background: #fff;
   font-family: "Rethink Sans", sans-serif;
 }
 
 /* Globals */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   color: #003da5;
-}
-
-h1 {
-  font-size: 60px;
   font-weight: 800;
-  line-height: 1;
 }
 
-h3 {
-  padding: 25px 0 0 0;
+h1, .h1 {
+  font-size: 65px;
+}
+
+h2, .h2 {
   font-size: 45px;
-  font-weight: 800;
-  line-height: 1em;
-  letter-spacing: -0.03em;
+}
+
+h3, .h3 {
+  font-size: 32px;
+}
+
+h4, .h4 {
+  font-size: 30px;
 }
 
 .btn {
@@ -203,10 +207,13 @@ section {
 
 .intro-blue-box {
   background: #003da5;
+  font-size: 22px;
 }
-.intro-blue-box h2 {
-  font-size: 2.8rem;
-  font-weight: 800;
+.intro-blue-box h2, .intro-blue-box p {
+  margin-bottom: 30px;
+}
+.intro-blue-box p {
+  padding-right: 6rem;
 }
 
 #video_poster {
@@ -230,41 +237,6 @@ section {
 }
 .stats > div > div:last-child {
   font-size: 18px;
-}
-
-/* Real World Section */
-.real_world {
-  position: relative;
-  margin-top: 40vw;
-  background: #003da5;
-  font-size: 30px;
-  line-height: 1em;
-  color: #fff;
-}
-
-.real_world h1 {
-  color: #fff;
-}
-
-#buildings_container {
-  position: relative;
-  width: 100%;
-  min-height: 300px;
-}
-
-#realworld_buildings_mobile {
-  position: relative;
-  bottom: 30vw;
-  right: 0;
-  margin-bottom: -30vw;
-  width: 100vw;
-  max-width: 100%;
-  padding-top: 0vw;
-}
-
-.buildings_mobile {
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 /* Ready for Section */
@@ -592,6 +564,18 @@ section {
 }
 /* Med Screens */
 @media (max-width: 768px) {
+  h1, .h1 {
+    font-size: 45px;
+  }
+
+  h2, .h2 {
+    font-size: 32px;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+  }
+
   .hero {
     background-size: 380%;
     background-position: 60% 36%;
@@ -643,15 +627,6 @@ section {
     font-size: 1.2rem;
   }
 }
-.h1 {
-  font-size: 65px;
-  font-weight: 800;
-  line-height: 0.9;
-  color: #003da5;
-  margin: 0;
-  letter-spacing: 0;
-}
-
 .subtext {
   padding: 15px 0;
   font-size: 30px;
@@ -712,14 +687,6 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  h1, h3, .h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
   div {
     font-size: 16px;
     line-height: 1.2;
