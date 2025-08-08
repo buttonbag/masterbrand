@@ -77,18 +77,10 @@ h1 {
   line-height: 1;
 }
 
-h2 {
-  padding: 15px 0;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 1em;
-  letter-spacing: -0.03em;
-}
-
 h3 {
   padding: 25px 0 0 0;
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1em;
   letter-spacing: -0.03em;
 }
@@ -182,6 +174,7 @@ section {
   background-position: 34% 23%;
   background-size: 140%;
   position: relative;
+  overflow: hidden;
 }
 .hero * {
   color: #fff;
@@ -211,6 +204,10 @@ section {
 .intro-blue-box {
   background: #003da5;
 }
+.intro-blue-box h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
 
 #video_poster {
   width: 100%;
@@ -218,6 +215,9 @@ section {
 }
 
 /* Stats Section */
+.stats {
+  color: #0072ce;
+}
 .stats > div > div:first-child {
   margin-bottom: 0;
   padding-bottom: 5px;
@@ -225,17 +225,11 @@ section {
   font-size: 56px;
   font-weight: 800;
   font-style: italic;
-  line-height: 1em;
+  line-height: 1;
   letter-spacing: -0.03em;
-  color: #0072ce;
 }
-
 .stats > div > div:last-child {
   font-size: 18px;
-  font-weight: 300;
-  line-height: 1em;
-  letter-spacing: -0.03em;
-  color: #003da5;
 }
 
 /* Real World Section */
@@ -508,23 +502,6 @@ section {
 
 /* Med Screens */
 @media (min-width: 576px) {
-  h1 {
-    font-size: 65px;
-  }
-
-  h2 {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    padding: 15px 0;
-  }
-
-  h3 {
-    font-size: 30px;
-    letter-spacing: -0.03em;
-    padding: 25px 0 0 0;
-  }
-
   #logo_horz {
     max-width: 240px;
   }
@@ -615,21 +592,6 @@ section {
 }
 /* Med Screens */
 @media (max-width: 768px) {
-  .carousel .carousel-item {
-    height: 660px;
-    background-size: 300%;
-  }
-  .carousel .carousel-item .quote {
-    margin: 20rem auto 0;
-    position: relative;
-  }
-  .carousel .carousel-control-container {
-    position: relative;
-    margin: 0 auto;
-  }
-}
-/* Small Screens */
-@media (max-width: 480px) {
   .hero {
     background-size: 380%;
     background-position: 60% 36%;
@@ -648,6 +610,21 @@ section {
     width: 100%;
   }
 
+  .carousel .carousel-item {
+    height: 660px;
+    background-size: 300%;
+  }
+  .carousel .carousel-item .quote {
+    margin: 20rem auto 0;
+    position: relative;
+  }
+  .carousel .carousel-control-container {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+/* Small Screens */
+@media (max-width: 480px) {
   .carousel .carousel-item {
     height: 400px;
     background-size: 265%;
@@ -734,7 +711,7 @@ footer a:hover {
   color: #dedede;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   h1, h3, .h1 {
     font-size: 2.5rem;
   }
@@ -831,10 +808,10 @@ footer a:hover {
   }
 }
 .video-section {
-  background: #00205b;
   padding-top: 4rem;
   padding-bottom: 4rem;
   color: #fff;
+  background: url(/img/transparent-logo.svg) left 75% no-repeat #00205b;
 }
 .video-section * {
   color: #fff;
@@ -915,13 +892,22 @@ footer a:hover {
   justify-content: start;
 }
 .video-section .scroll-arrow {
-  font-size: 24px;
-  background: rgba(0, 61, 165, 0.7);
-  color: white;
-  padding: 8px 12px;
   cursor: pointer;
-  user-select: none;
-  border-radius: 4px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #003da5;
+  transition: all 0.25s ease-out;
+  background-image: url(../img/slider_nav_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+  background-color: #fff;
+  opacity: 1;
+}
+.video-section .scroll-arrow.right-arrow {
+  transform: scale(-1);
 }
 .video-section .video-container {
   aspect-ratio: 16/9;

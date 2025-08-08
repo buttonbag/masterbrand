@@ -68,16 +68,16 @@ h1 {
     line-height: 1;
 }
 h2 {
-    padding: 15px 0;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1em;
-    letter-spacing: -.03em; 
+    // padding: 15px 0;
+    // font-size: 30px;
+    // font-weight: 800;
+    // line-height: 1em;
+    // letter-spacing: -.03em; 
 }
 h3 {
     padding: 25px 0 0 0;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 1em;
     letter-spacing: -.03em;
 }
@@ -159,6 +159,7 @@ min-height: 420px;
   background-position: 34% 23%;
   background-size: 140%;
   position: relative;
+  overflow: hidden;
     * {color: $white;}
 
     &::before {
@@ -195,6 +196,10 @@ min-height: 420px;
 // intro-blue-box
 .intro-blue-box {
     background: $primary-blue;
+    h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+    }
 }
 
 #video_poster {
@@ -202,24 +207,21 @@ min-height: 420px;
     height: auto;
 }
 /* Stats Section */
-.stats > div > div:first-child {
+.stats{ 
+    color: $light-blue; 
+    > div > div:first-child {
     margin-bottom: 0;
     padding-bottom: 5px;
     font-family: 'newsreader', serif;
     font-size: 56px;
     font-weight: 800;
     font-style: italic;
-    line-height: 1em;
+    line-height: 1;
     letter-spacing: -.03em;
-    color: $light-blue; 
 }
-.stats > div > div:last-child {
+ > div > div:last-child {
     font-size: 18px;
-    font-weight: 300;
-    line-height: 1em;
-    letter-spacing: -.03em;
-    color: $primary-blue;
-}
+}}
 /* Real World Section */
 .real_world {
     position: relative;
@@ -378,20 +380,20 @@ min-height: 420px;
 }
 /* Med Screens */
 @media (min-width: 576px) {
-h1 {
-    font-size: 65px;
-}
-h2 {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: -.03em;
-    padding: 15px 0;
-}
-h3 {
-    font-size: 30px;
-    letter-spacing: -.03em;
-    padding: 25px 0 0 0;
-}
+// h1 {
+//     font-size: 65px;
+// }
+// h2 {
+//     font-size: 32px;
+//     font-weight: 600;
+//     letter-spacing: -.03em;
+//     padding: 15px 0;
+// }
+// h3 {
+//     font-size: 30px;
+//     letter-spacing: -.03em;
+//     padding: 25px 0 0 0;
+// }
 #logo_horz {
     max-width: 240px;
 }
@@ -478,6 +480,29 @@ h3 {
 /* Med Screens */
 @media (max-width: 768px) {
 
+    .hero {
+    
+        background-size: 380%;
+        background-position: 60% 36%;
+        height: 535px;
+        padding: 3rem 0;
+    
+    
+        .dpu-ll-logo {
+            width: 113px;
+            height: auto;
+        }
+    
+        &::before {
+            scale: 50%;
+            transform-origin: bottom right;
+        }
+    
+        &::after {
+            width: 100%;
+        }
+    }
+
     .carousel {
         .carousel-item {
             height: 660px;
@@ -498,28 +523,7 @@ h3 {
 
 /* Small Screens */
 @media (max-width: 480px) {
-.hero {
 
-            background-size: 380%;
-            background-position: 60% 36%;
-            height: 535px;
-            padding: 3rem 0;
-
-
-        .dpu-ll-logo {
-            width: 113px;
-            height: auto;
-        }
-
-        &::before {
-            scale: 50%;
-            transform-origin: bottom right;
-        }
-
-        &::after {
-            width: 100%;
-        }
-    }    
     .carousel {
         .carousel-item {
             height: 400px;
@@ -646,7 +650,7 @@ footer a:hover {
 color: #dedede;
 } 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   // global
   h1, h3, .h1 {
     font-size: 2.5rem;
