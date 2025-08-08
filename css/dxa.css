@@ -929,4 +929,8 @@ footer a:hover {
   height: auto;
 }
 
+.ll-header {
+  min-height: 172px;
+}
+
 /*# sourceMappingURL=dxa.css.map */
