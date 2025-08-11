@@ -248,6 +248,7 @@ min-height: 420px;
             width: 75px;
             bottom: 25px;
             right: 35px;
+            display: none; //hide for now
 
             button {
                 display: inline-block;
@@ -479,9 +480,11 @@ h3, .h3 {
     }
 
     .carousel {
+        .carousel-inner {
+            height: 630px;
         .carousel-item {
-            height: 660px;
-            background-size: 300%;
+            height: 400px;
+            background-size: 140%;
 
             .quote {
                 margin: 20rem auto 0;
@@ -493,21 +496,24 @@ h3, .h3 {
             position: relative;
             margin: 0 auto;
         }
-    }
+    }}
 }
 
 /* Small Screens */
 @media (max-width: 480px) {
 
     .carousel {
-        .carousel-item {
+        .carousel-inner {
+            height:600px;
+            .carousel-item {
             height: 400px;
-            background-size: 265%;
+            background-size: 213%;
+            background-position: 55% 0% !important;
 
             .quote {
-                margin: 10rem auto 0;
+                margin: 22rem 3rem 0;
                 position: relative;
-                width: 100%;
+                width: auto;
                 padding: 25px;
 
                 .dbl-quote::before {
@@ -520,6 +526,7 @@ h3, .h3 {
                 }
             }
         }
+    }
     }
 }
 
@@ -556,7 +563,7 @@ h3, .h3 {
   color: $white;
 }
 // slider
-.slide {
+.carousel {
     // height: 390px;
     .quote {
         display: flex;
