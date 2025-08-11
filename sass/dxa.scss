@@ -84,6 +84,7 @@ h4, .h4 {
     margin-bottom: 20px;
     min-width: 70vw;
     padding: 8px 30px;
+    margin-right: 12px;
 
 }
 /* Footer */
@@ -153,15 +154,16 @@ min-height: 420px;
   background-size: 140%;
   position: relative;
   overflow: hidden;
-    * {color: $white;}
-
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0px;
-        right: 0;
+  * {color: $white;}
+  
+  &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      right: 0;
         background: $primary-blue;
+      border-bottom: 1px solid $primary-blue;
         width: 150px;
         height: 150px;
         clip-path: polygon(50% 0px, 50% 50%, 0% 50%, 0 100%, 100% 100%, 100% 0%);
@@ -174,7 +176,7 @@ min-height: 420px;
         left: 0;
         background: $light-blue;
         width: 900px;
-        height: 20px;
+        height: 13px;
         position: absolute;
     }
 }
@@ -193,7 +195,7 @@ min-height: 420px;
     h2, p {
         margin-bottom: 30px;
     }
-    p {padding-right: 6rem;}
+    p {padding-right: 4rem;}
 }
 
 #video_poster {
@@ -366,7 +368,6 @@ min-height: 420px;
 
 .btn-primary {
     font-size: 15px;
-    margin-right: 20px;
     margin-bottom: 0px;
     min-width: inherit;
 }
@@ -501,6 +502,13 @@ h3, .h3 {
 
 /* Small Screens */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 2rem; 
+    }
+
+    .intro-blue-box {
+        p {padding-right: 3rem;}
+    }
 
     .carousel {
         .carousel-inner {

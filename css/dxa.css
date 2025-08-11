@@ -100,6 +100,7 @@ h4, .h4 {
   margin-bottom: 20px;
   min-width: 70vw;
   padding: 8px 30px;
+  margin-right: 12px;
 }
 
 /* Footer */
@@ -190,6 +191,7 @@ section {
   bottom: 0px;
   right: 0;
   background: #003da5;
+  border-bottom: 1px solid #003da5;
   width: 150px;
   height: 150px;
   clip-path: polygon(50% 0px, 50% 50%, 0% 50%, 0 100%, 100% 100%, 100% 0%);
@@ -201,7 +203,7 @@ section {
   left: 0;
   background: #0072ce;
   width: 900px;
-  height: 20px;
+  height: 13px;
   position: absolute;
 }
 
@@ -213,7 +215,7 @@ section {
   margin-bottom: 30px;
 }
 .intro-blue-box p {
-  padding-right: 6rem;
+  padding-right: 4rem;
 }
 
 #video_poster {
@@ -481,7 +483,6 @@ section {
 
   .btn-primary {
     font-size: 15px;
-    margin-right: 20px;
     margin-bottom: 0px;
     min-width: inherit;
   }
@@ -613,6 +614,14 @@ section {
 }
 /* Small Screens */
 @media (max-width: 480px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .intro-blue-box p {
+    padding-right: 3rem;
+  }
+
   .carousel .carousel-inner {
     height: 600px;
   }
