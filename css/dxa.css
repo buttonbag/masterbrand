@@ -475,175 +475,6 @@ section {
   position: relative;
 }
 
-/* Med Screens */
-@media (min-width: 576px) {
-  #logo_horz {
-    max-width: 240px;
-  }
-
-  .btn-primary {
-    font-size: 15px;
-    margin-bottom: 0px;
-    min-width: inherit;
-  }
-
-  .stats > div > div:last-child {
-    max-width: 250px;
-  }
-
-  .slider_nav {
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-    height: 50px;
-  }
-
-  .slider_nav > a {
-    background: url("../img/slider_nav_arrow.svg") no-repeat;
-    background-size: 17px auto;
-    background-position: 6px 9px;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-left: 10px;
-  }
-
-  .slide h3 {
-    max-width: 70%;
-    min-height: 85px;
-    font-size: 30px;
-  }
-
-  .form_inst {
-    font-size: 22px;
-  }
-
-  .ready_container {
-    font-size: 18px;
-  }
-
-  #buildings_container {
-    position: relative;
-    min-height: 400px;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    left: 0;
-  }
-
-  .real_world {
-    margin-top: 10vw;
-  }
-
-  #realworld_buildings {
-    width: 30vw;
-    max-width: 380px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-}
-/* X Large Monitors */
-/* Large Monitors */
-@media (min-width: 992px) {
-  .alumni_container {
-    font-size: 30px;
-  }
-
-  .slide h3 {
-    max-width: 50%;
-  }
-}
-/* Med - Large Screens */
-@media (max-width: 991px) {
-  section {
-    padding: 0;
-  }
-
-  .slide h3 {
-    max-width: 60%;
-  }
-}
-/* Med Screens */
-@media (max-width: 768px) {
-  h1, .h1 {
-    font-size: 45px;
-  }
-
-  h2, .h2 {
-    font-size: 32px;
-  }
-
-  h3, .h3 {
-    font-size: 28px;
-  }
-
-  .hero {
-    background-size: 380%;
-    background-position: 60% 36%;
-    height: 535px;
-    padding: 3rem 0;
-  }
-  .hero .dpu-ll-logo {
-    width: 113px;
-    height: auto;
-  }
-  .hero::before {
-    scale: 50%;
-    transform-origin: bottom right;
-  }
-  .hero::after {
-    width: 100%;
-  }
-
-  .carousel .carousel-inner {
-    height: 630px;
-  }
-  .carousel .carousel-inner .carousel-item {
-    height: 400px;
-    background-size: 140%;
-  }
-  .carousel .carousel-inner .carousel-item .quote {
-    margin: 20rem auto 0;
-    position: relative;
-  }
-  .carousel .carousel-inner .carousel-control-container {
-    position: relative;
-    margin: 0 auto;
-  }
-}
-/* Small Screens */
-@media (max-width: 480px) {
-  .container {
-    padding: 0 2rem;
-  }
-
-  .intro-blue-box p {
-    padding-right: 3rem;
-  }
-
-  .carousel .carousel-inner {
-    height: 600px;
-  }
-  .carousel .carousel-inner .carousel-item {
-    height: 400px;
-    background-size: 213%;
-    background-position: 55% 0% !important;
-  }
-  .carousel .carousel-inner .carousel-item .quote {
-    margin: 22rem 3rem 0;
-    position: relative;
-    width: auto;
-    padding: 25px;
-  }
-  .carousel .carousel-inner .carousel-item .quote .dbl-quote::before {
-    font-size: 3rem;
-    height: 12px;
-  }
-  .carousel .carousel-inner .carousel-item .quote .quote-content {
-    font-size: 1.2rem;
-  }
-}
 .subtext {
   padding: 15px 0;
   font-size: 30px;
@@ -728,10 +559,6 @@ footer a:hover {
 
   .stats div > div:first-child {
     font-size: 4rem;
-  }
-
-  .stats > div {
-    margin: 1.5rem auto;
   }
 
   .video_container {
@@ -901,6 +728,183 @@ footer a:hover {
 
 .ll-header {
   min-height: 172px;
+}
+
+/* Med Screens */
+@media (min-width: 576px) {
+  #logo_horz {
+    max-width: 240px;
+  }
+
+  .btn-primary {
+    font-size: 15px;
+    margin-bottom: 0px;
+    min-width: inherit;
+  }
+
+  .stats > div > div:last-child {
+    max-width: 250px;
+  }
+
+  .slider_nav {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    height: 50px;
+  }
+
+  .slider_nav > a {
+    background: url("../img/slider_nav_arrow.svg") no-repeat;
+    background-size: 17px auto;
+    background-position: 6px 9px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .slide h3 {
+    max-width: 70%;
+    min-height: 85px;
+    font-size: 30px;
+  }
+
+  .form_inst {
+    font-size: 22px;
+  }
+
+  .ready_container {
+    font-size: 18px;
+  }
+
+  #buildings_container {
+    position: relative;
+    min-height: 400px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+  }
+
+  .real_world {
+    margin-top: 10vw;
+  }
+
+  #realworld_buildings {
+    width: 30vw;
+    max-width: 380px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+/* X Large Monitors */
+/* Large Monitors */
+@media (min-width: 992px) {
+  .alumni_container {
+    font-size: 30px;
+  }
+
+  .slide h3 {
+    max-width: 50%;
+  }
+}
+/* Med - Large Screens */
+@media (max-width: 991px) {
+  section {
+    padding: 0;
+  }
+
+  .slide h3 {
+    max-width: 60%;
+  }
+}
+/* Med Screens */
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: 45px;
+  }
+
+  h2, .h2 {
+    font-size: 32px;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+  }
+
+  .hero {
+    background-size: 380%;
+    background-position: 60% 36%;
+    height: 535px;
+    padding: 3rem 0;
+  }
+  .hero .dpu-ll-logo {
+    width: 113px;
+    height: auto;
+  }
+  .hero::before {
+    scale: 50%;
+    transform-origin: bottom right;
+  }
+  .hero::after {
+    width: 100%;
+  }
+
+  .carousel .carousel-inner {
+    height: 630px;
+  }
+  .carousel .carousel-inner .carousel-item {
+    height: 400px;
+    background-size: 140%;
+  }
+  .carousel .carousel-inner .carousel-item .quote {
+    margin: 20rem auto 0;
+    position: relative;
+  }
+  .carousel .carousel-inner .carousel-control-container {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+/* Small Screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .intro-blue-box p {
+    padding-right: 3rem;
+  }
+
+  .stats div > div:first-child {
+    font-size: 40px;
+  }
+  .stats div > div:last-child {
+    font-size: 13px;
+  }
+
+  .carousel .carousel-inner {
+    height: 600px;
+  }
+  .carousel .carousel-inner .carousel-item {
+    height: 400px;
+    background-size: 213%;
+    background-position: 55% 0% !important;
+  }
+  .carousel .carousel-inner .carousel-item .quote {
+    margin: 22rem 3rem 0;
+    position: relative;
+    width: auto;
+    padding: 25px;
+  }
+  .carousel .carousel-inner .carousel-item .quote .dbl-quote::before {
+    font-size: 3rem;
+    height: 12px;
+  }
+  .carousel .carousel-inner .carousel-item .quote .quote-content {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=dxa.css.map */
