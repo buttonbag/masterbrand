@@ -89,6 +89,10 @@ h4, .h4 {
   font-size: 30px;
 }
 
+p {
+  line-height: 1.4;
+}
+
 .btn {
   border: 0;
   font-weight: 300;
@@ -748,6 +752,10 @@ footer a:hover {
   min-height: 172px;
 }
 
+.checkered p {
+  font-size: 18px;
+}
+
 /* Med Screens */
 @media (min-width: 576px) {
   #logo_horz {
@@ -900,6 +908,14 @@ footer a:hover {
   }
   .stats div > div:last-child {
     font-size: 13px;
+  }
+
+  .checkered p {
+    font-size: 16px;
+  }
+  .checkered .container {
+    padding: 0;
+    overflow: hidden;
   }
 
   .carousel .carousel-inner {

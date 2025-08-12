@@ -73,7 +73,7 @@ h3, .h3 {
 h4, .h4 {
     font-size: 30px;
 }
-
+p {line-height: 1.4;}
 .btn {
     border: 0;
     font-weight: 300;
@@ -572,6 +572,11 @@ color: #dedede;
     min-height: 172px;
 }
 
+// checkered tiles
+.checkered p {
+    font-size: 18px;
+}
+
 /* Med Screens */
 @media (min-width: 576px) {
 // h1 {
@@ -744,6 +749,12 @@ h3, .h3 {
     }
 }
 
+.checkered {
+    p {font-size: 16px}
+    .container {
+    padding: 0;
+    overflow: hidden;}
+}
     .carousel {
         .carousel-inner {
             height:600px;
