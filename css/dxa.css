@@ -761,6 +761,10 @@ footer a:hover {
   background-color: #fff;
   opacity: 1;
 }
+.video-section .scroll-arrow .inactive {
+  opacity: 0.4 !important;
+  pointer-events: none;
+}
 .video-section .scroll-arrow.right-arrow {
   transform: scale(-1);
 }

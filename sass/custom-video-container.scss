@@ -141,6 +141,11 @@ margin: 20px 0;
   background-color: #fff;
   opacity: 1;
 
+  .inactive {
+    opacity: .4!important;
+    pointer-events: none;
+  }
+
   &.right-arrow {
     transform: scale(-1);
   }
