@@ -261,10 +261,19 @@ section {
 }
 .ready_container h3 {
   margin-top: 2rem !important;
+  font-size: 30px;
 }
 .ready_container p {
   padding-right: 10%;
   margin-bottom: 0;
+}
+
+/* blue-bar */
+.blue-bar img {
+  height: 100%;
+}
+.blue-bar .text-content {
+  padding: 4rem 0;
 }
 
 /* Carousel */
@@ -346,7 +355,7 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1em;
   color: #003da5;
 }
@@ -511,7 +520,7 @@ section {
   top: 0;
   background: #003da5;
   border-radius: 45px 0px;
-  margin: 30px 15px;
+  margin: 40px 25px;
   color: #fff;
   text-align: center;
 }
@@ -924,6 +933,18 @@ footer a:hover {
     overflow: hidden;
   }
 
+  .blue-bar {
+    padding: 3.5rem 0 2rem;
+  }
+  .blue-bar img {
+    margin: 0 -4.1rem;
+    width: 135%;
+    height: auto;
+  }
+  .blue-bar .text-content {
+    padding: 2rem 0 0;
+  }
+
   .testimonial .container {
     padding: 0;
     overflow: hidden;
@@ -955,7 +976,6 @@ footer a:hover {
 
   .alumni_container .row div:last-child {
     font-size: 21px !important;
-    font-weight: 800;
     padding: 0.4rem 1.2rem;
   }
 
