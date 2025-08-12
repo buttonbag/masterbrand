@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     color: $primary-blue;
     font-weight: 800;
+    line-height: 1;
 }
 h1, .h1 {
     font-size: 65px;
@@ -193,6 +194,7 @@ min-height: 420px;
     font-size: 22px;
     h2, p {
         margin-bottom: 30px;
+        line-height: 1.2;
     }
     p {padding-right: 4rem;}
 }

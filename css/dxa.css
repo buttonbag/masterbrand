@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #003da5;
   font-weight: 800;
+  line-height: 1;
 }
 
 h1, .h1 {
@@ -216,6 +217,7 @@ section {
 }
 .intro-blue-box h2, .intro-blue-box p {
   margin-bottom: 30px;
+  line-height: 1.2;
 }
 .intro-blue-box p {
   padding-right: 4rem;
@@ -677,12 +679,12 @@ footer a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 61, 165, 0.6);
+  background-color: #003da5;
   color: white;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 84px;
+  height: 84px;
   font-size: 30px;
   cursor: pointer;
   z-index: 3;
@@ -712,9 +714,8 @@ footer a:hover {
 .video-section .video-selector {
   display: flex;
   scroll-behavior: smooth;
-  gap: 20px;
+  gap: 6px;
   max-width: 90%;
-  padding: 0 10px;
   overflow-y: scroll;
   /* Allows scrolling */
   -ms-overflow-style: none;
@@ -723,9 +724,8 @@ footer a:hover {
   /* For Firefox */
 }
 .video-section .arrow-controls {
-  margin-top: 10px;
+  margin: 20px 0;
   display: flex;
-  padding: 0 10px;
   gap: 20px;
   justify-content: start;
 }
@@ -761,6 +761,10 @@ footer a:hover {
   }
   .video-section .video-selector {
     max-width: 100%;
+  }
+  .video-section .custom-play-button {
+    width: 64px;
+    height: 64px;
   }
 }
 .ll-header {
