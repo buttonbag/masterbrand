@@ -638,7 +638,7 @@ footer a:hover {
 .video-section {
   padding: 4rem 0 0;
   color: #fff;
-  background: url(/img/transparent-logo.svg) left 80% no-repeat #00205b;
+  background: url(../img/transparent-logo.svg) left 80% no-repeat #00205b;
   flex-direction: column;
   overflow: hidden;
 }
@@ -710,18 +710,35 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  position: relative;
+}
+.video-section .video-selector-wrapper::after {
+  content: "";
+  background: linear-gradient(90deg, rgba(0, 32, 91, 0) 0%, #00205b 100%);
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 3rem 0;
 }
 .video-section .video-selector {
   display: flex;
   scroll-behavior: smooth;
   gap: 6px;
-  max-width: 90%;
+  padding-right: 50px;
   overflow-y: scroll;
   /* Allows scrolling */
   -ms-overflow-style: none;
   /* For Internet Explorer and Edge */
   scrollbar-width: none;
   /* For Firefox */
+}
+.video-section .video-selector::after {
+  content: "";
+  width: 50px;
+  height: auto;
+  background: red;
 }
 .video-section .arrow-controls {
   margin: 20px 0;

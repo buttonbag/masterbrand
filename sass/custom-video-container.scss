@@ -3,7 +3,7 @@
 
   padding: 4rem 0 0;
   color: $white;
-  background: url(/img/transparent-logo.svg) left 80% no-repeat $secondary-blue;
+  background: url(../img/transparent-logo.svg) left 80% no-repeat $secondary-blue;
   flex-direction: column;
   overflow: hidden;
 
@@ -79,16 +79,35 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: linear-gradient(90deg, rgba(0, 32, 91, 0) 0%, rgba(0, 32, 91, 1) 100%);
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem 0;
+  }
 }
 
 .video-selector {
   display: flex;
   scroll-behavior: smooth;
   gap: 6px;
-  max-width: 90%;
+  padding-right: 50px;
   overflow-y: scroll; /* Allows scrolling */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
     scrollbar-width: none; /* For Firefox */
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: auto;
+      background: red;
+    }
 }
 
 .video-selector::-webkit-scrollbar {
