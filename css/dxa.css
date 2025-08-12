@@ -761,7 +761,7 @@ footer a:hover {
   background-color: #fff;
   opacity: 1;
 }
-.video-section .scroll-arrow .inactive {
+.video-section .scroll-arrow.inactive {
   opacity: 0.4 !important;
   pointer-events: none;
 }
