@@ -82,34 +82,52 @@ function onPlayerStateChange(event) {
 
 
 const selector = document.querySelector('.video-selector');
-//const scrollAmount = 140 * 3; // width of 3 thumbnails (adjust if needed)
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
 
-let scrollAmount;
+let scrollAmount = 144; // width of 1 tn
 
-function debounce(func, wait = 150) {
-  let timeout;
-  return (...args) => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
+function updateArrowState() {
+  const thumbnails = selector.querySelectorAll('.video-thumbnail');
+  const containerRect = selector.getBoundingClientRect();
+
+  // First thumbnail position in scroll coordinates
+  const firstThumbOffset = thumbnails[0].offsetLeft;
+  const lastThumbOffset = thumbnails[thumbnails.length - 1].offsetLeft + thumbnails[thumbnails.length - 1].offsetWidth;
+
+  const atStart = Math.round(selector.scrollLeft) <= Math.round(firstThumbOffset);
+  const atEnd = Math.round(selector.scrollLeft + selector.clientWidth) >= Math.round(lastThumbOffset);
+
+  leftArrow.classList.toggle('inactive', atStart);
+  rightArrow.classList.toggle('inactive', atEnd);
 }
 
-function updateScrollAmount() {
-  scrollAmount = window.innerWidth <= 520 
-    ? 140 * 2  // Mobile
-    : 140 * 3;   // Desktop
+// Safari-safe smooth scroll fallback
+function smoothScrollBy(element, amount) {
+  if ('scrollBy' in element && typeof element.scrollBy === 'function') {
+    try {
+      element.scrollBy({ left: amount, behavior: 'smooth' });
+    } catch (e) {
+      element.scrollLeft += amount;
+    }
+  } else {
+    element.scrollLeft += amount;
+  }
+  setTimeout(updateArrowState, 50); // update shortly after movement starts
 }
 
-// Initial setup
-updateScrollAmount();
+// Scroll listener
+selector.addEventListener('scroll', updateArrowState, { passive: true });
 
-// Update when window resizes
-window.addEventListener('resize', debounce(updateScrollAmount, 150));
-
-document.querySelector('.left-arrow').addEventListener('click', () => {
-  selector.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+// Click handlers
+leftArrow.addEventListener('click', () => {
+  if (!leftArrow.classList.contains('inactive')) {
+    smoothScrollBy(selector, -scrollAmount);
+  }
 });
 
-document.querySelector('.right-arrow').addEventListener('click', () => {
-  selector.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+rightArrow.addEventListener('click', () => {
+  if (!rightArrow.classList.contains('inactive')) {
+    smoothScrollBy(selector, scrollAmount);
+  }
 });
