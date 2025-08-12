@@ -98,8 +98,7 @@ footer a {
     color: $white;
 }
 footer h3 {
-    font-weight: 200;
-    font-size: 22px;
+    font-weight: 600;
     color: $white;
 }
 .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
@@ -224,17 +223,29 @@ min-height: 420px;
     font-size: $mobile-subhead;
     line-height: 1em;
     color: $primary-blue;
+    margin-bottom: 4rem;
+
+    img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    a {
+        bottom: 0;
+    }
+
+    h3 {
+        margin-top: 2rem !important;
+    }
+
+    p {
+        padding-right: 10%;
+        margin-bottom: 0;
+    }
 }
-.ready_container > div > div {
-    padding-bottom: 5rem !important;
-}
-.ready_container img {
-    width: 100%;
-    height: auto;
-}
-.ready_container a {
-    bottom: 0;
-}
+
+
 /* Carousel */
 .carousel {
     width: 100%;
@@ -734,51 +745,92 @@ h3, .h3 {
 /* Small Screens */
 @media (max-width: 480px) {
     .container {
-        padding: 0 2rem; 
+        padding: 0 2rem;
     }
 
     .intro-blue-box {
-        p {padding-right: 3rem;}
+        p {
+            padding-right: 3rem;
+        }
     }
-  .stats div {
-    > div:first-child {
-        font-size: 40px;    
+
+    .stats div {
+        >div:first-child {
+            font-size: 40px;
+        }
+
+        >div:last-child {
+            font-size: 13px;
+        }
     }
-    > div:last-child {
-        font-size: 13px;
+
+    .checkered {
+        p {
+            font-size: 16px
+        }
+
+        .container {
+            padding: 0;
+            overflow: hidden;
+        }
     }
-}
 
-.checkered {
-    p {font-size: 16px}
-    .container {
-    padding: 0;
-    overflow: hidden;}
-}
-    .carousel {
-        .carousel-inner {
-            height:600px;
-            .carousel-item {
-            height: 400px;
-            background-size: 213%;
-            background-position: 55% 0% !important;
+    .testimonial {
+        .container {padding: 0; overflow: hidden;}
+        .carousel {
+            .carousel-inner {
+                height: 600px;
 
-            .quote {
-                margin: 22rem 3rem 0;
-                position: relative;
-                width: auto;
-                padding: 25px;
+                .carousel-item {
+                    height: 400px;
+                    background-size: 213%;
+                    background-position: 55% 0% !important;
 
-                .dbl-quote::before {
-                    font-size: 3rem;
-                    height: 12px;
-                }
+                    .quote {
+                        margin: 22rem 2rem 0;
+                        position: relative;
+                        width: auto;
+                        padding: 25px;
 
-                .quote-content {
-                    font-size: 1.2rem;
+                        .dbl-quote::before {
+                            font-size: 3rem;
+                            height: 12px;
+                        }
+
+                        .quote-content {
+                            font-size: 22px;
+                        }
+
+                        .quote-by-line {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
     }
+
+    .alumni_container .row div:last-child {
+        font-size: 21px !important;
+        font-weight: 800;
+        padding: 0.4rem 1.2rem;
     }
+
+        .ready_container {
+            overflow: hidden;
+            
+            >div>div {
+                padding-bottom: 5rem !important;
+            }
+            
+            img {
+                width: 120%;
+                height: 360px;
+                margin: auto -2rem;
+            }
+            h3 {
+                margin-top: 2rem !important;
+            }
+            p {padding-right: 2rem;}
+        }
 }

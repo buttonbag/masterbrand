@@ -119,8 +119,7 @@ footer a {
 }
 
 footer h3 {
-  font-weight: 200;
-  font-size: 22px;
+  font-weight: 600;
   color: #fff;
 }
 
@@ -250,19 +249,22 @@ section {
   font-size: 30px;
   line-height: 1em;
   color: #003da5;
+  margin-bottom: 4rem;
 }
-
-.ready_container > div > div {
-  padding-bottom: 5rem !important;
-}
-
 .ready_container img {
   width: 100%;
-  height: auto;
+  height: 500px;
+  object-fit: cover;
 }
-
 .ready_container a {
   bottom: 0;
+}
+.ready_container h3 {
+  margin-top: 2rem !important;
+}
+.ready_container p {
+  padding-right: 10%;
+  margin-bottom: 0;
 }
 
 /* Carousel */
@@ -922,26 +924,57 @@ footer a:hover {
     overflow: hidden;
   }
 
-  .carousel .carousel-inner {
+  .testimonial .container {
+    padding: 0;
+    overflow: hidden;
+  }
+  .testimonial .carousel .carousel-inner {
     height: 600px;
   }
-  .carousel .carousel-inner .carousel-item {
+  .testimonial .carousel .carousel-inner .carousel-item {
     height: 400px;
     background-size: 213%;
     background-position: 55% 0% !important;
   }
-  .carousel .carousel-inner .carousel-item .quote {
-    margin: 22rem 3rem 0;
+  .testimonial .carousel .carousel-inner .carousel-item .quote {
+    margin: 22rem 2rem 0;
     position: relative;
     width: auto;
     padding: 25px;
   }
-  .carousel .carousel-inner .carousel-item .quote .dbl-quote::before {
+  .testimonial .carousel .carousel-inner .carousel-item .quote .dbl-quote::before {
     font-size: 3rem;
     height: 12px;
   }
-  .carousel .carousel-inner .carousel-item .quote .quote-content {
-    font-size: 1.2rem;
+  .testimonial .carousel .carousel-inner .carousel-item .quote .quote-content {
+    font-size: 22px;
+  }
+  .testimonial .carousel .carousel-inner .carousel-item .quote .quote-by-line {
+    font-size: 16px;
+  }
+
+  .alumni_container .row div:last-child {
+    font-size: 21px !important;
+    font-weight: 800;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .ready_container {
+    overflow: hidden;
+  }
+  .ready_container > div > div {
+    padding-bottom: 5rem !important;
+  }
+  .ready_container img {
+    width: 120%;
+    height: 360px;
+    margin: auto -2rem;
+  }
+  .ready_container h3 {
+    margin-top: 2rem !important;
+  }
+  .ready_container p {
+    padding-right: 2rem;
   }
 }
 
