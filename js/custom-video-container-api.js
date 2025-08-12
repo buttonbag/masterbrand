@@ -82,7 +82,29 @@ function onPlayerStateChange(event) {
 
 
 const selector = document.querySelector('.video-selector');
-const scrollAmount = 140 * 3; // width of 3 thumbnails (adjust if needed)
+//const scrollAmount = 140 * 3; // width of 3 thumbnails (adjust if needed)
+
+let scrollAmount;
+
+function debounce(func, wait = 150) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+function updateScrollAmount() {
+  scrollAmount = window.innerWidth <= 520 
+    ? 140 * 2  // Mobile
+    : 140 * 3;   // Desktop
+}
+
+// Initial setup
+updateScrollAmount();
+
+// Update when window resizes
+window.addEventListener('resize', debounce(updateScrollAmount, 150));
 
 document.querySelector('.left-arrow').addEventListener('click', () => {
   selector.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
