@@ -619,20 +619,27 @@ footer a:hover {
   }
 }
 .video-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0 0;
   color: #fff;
-  background: url(/img/transparent-logo.svg) left 75% no-repeat #00205b;
+  background: url(/img/transparent-logo.svg) left 80% no-repeat #00205b;
+  flex-direction: column;
+  overflow: hidden;
 }
 .video-section * {
   color: #fff;
 }
 .video-section .video-container {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
   position: relative;
-  width: 560px;
-  height: 315px;
-  margin: 20px auto;
+  margin: 0 auto;
   background: black;
+  padding: 2rem;
+}
+.video-section .container {
+  padding: 0 0 0 2rem;
+  margin-right: 0;
 }
 .video-section #player {
   width: 100%;
@@ -675,12 +682,12 @@ footer a:hover {
   cursor: pointer;
   border: 2px solid transparent;
   transition: border-color 0.3s;
-  width: 120px;
-  height: 68px;
+  width: 144px;
+  height: auto;
   object-fit: cover;
 }
 .video-section .video-thumbnail:hover {
-  border-color: #003DA5;
+  border-color: #0072ce;
 }
 .video-section .video-selector-wrapper {
   display: flex;
@@ -689,11 +696,16 @@ footer a:hover {
 }
 .video-section .video-selector {
   display: flex;
-  overflow-x: auto;
   scroll-behavior: smooth;
   gap: 20px;
-  max-width: 560px;
+  max-width: 90%;
   padding: 0 10px;
+  overflow-y: scroll;
+  /* Allows scrolling */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* For Firefox */
 }
 .video-section .arrow-controls {
   margin-top: 10px;
@@ -720,12 +732,18 @@ footer a:hover {
 .video-section .scroll-arrow.right-arrow {
   transform: scale(-1);
 }
-.video-section .video-container {
-  aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
-}
 
+@media (max-width: 480px) {
+  .video-section {
+    background: #00205b;
+  }
+  .video-section .container {
+    padding: 2rem;
+  }
+  .video-section .video-selector {
+    max-width: 100%;
+  }
+}
 .ll-header {
   min-height: 172px;
 }
