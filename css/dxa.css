@@ -630,11 +630,11 @@ footer a:hover {
 }
 .video-section .video-container {
   aspect-ratio: 16/9;
-  width: 100%;
+  width: 90%;
   height: auto;
   position: relative;
   margin: 0 auto;
-  background: black;
+  background: #00205b;
   padding: 2rem;
 }
 .video-section .container {

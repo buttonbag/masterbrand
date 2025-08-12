@@ -9,11 +9,11 @@
 
     .video-container {
         aspect-ratio: 16 / 9;
-        width: 100%;
+        width: 90%;
         height: auto;
       position: relative;
       margin: 0 auto;
-      background: black;
+      background: $secondary-blue;
       padding: 2rem;
     }
 .container {
