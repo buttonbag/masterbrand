@@ -6,6 +6,13 @@ $white: #fff;
 $light-gray: #eff0f0;
 $mobile-subhead: 30px;
 
+// font sizes
+$h1: 4.0625rem; //65px;
+$h2: 2.8125rem; //45px;
+$h3: 2rem; //32px;
+$h4: 1.875rem; //30px;
+$p: 1rem;
+
 .primary-blue{ color: #003da5 !important;}
 .secondary-blue{ color: #00205b !important;}
 .light-blue{ color: #0072ce !important;}
@@ -54,6 +61,7 @@ $mobile-subhead: 30px;
 html, body {
     background: $white;
     font-family: "Rethink Sans", sans-serif;
+    font-size: 16px;
 }
 /* Globals */
 h1, h2, h3, h4, h5, h6,
@@ -63,18 +71,21 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1;
 }
 h1, .h1 {
-    font-size: 65px;
+    font-size: $h1; //65px;
 }
 h2, .h2 {
-    font-size: 45px;
+    font-size: $h2; //45px;
 }
 h3, .h3 {
-    font-size: 32px;
+    font-size: $h3; //32px;
 }
 h4, .h4 {
-    font-size: 30px;
+    font-size: $h4; //30px;
 }
-p {line-height: 1.6;}
+p {
+    line-height: 1.6;
+    font-size: $p;
+}
 .btn {
     border: 0;
     font-weight: 300;
@@ -191,12 +202,11 @@ min-height: 420px;
 // intro-blue-box
 .intro-blue-box {
     background: $primary-blue;
-    font-size: 22px;
     h2, p {
         margin-bottom: 30px;
         line-height: 1.2;
     }
-    p {padding-right: 4rem;}
+    p {padding-right: 4rem; font-size: 1.375em;}
 }
 
 #video_poster {
@@ -332,9 +342,9 @@ min-height: 420px;
 .alumni_container {
     padding-top: 40px;
     padding-bottom: 40px;
-    font-size: 30px;
+    font-size: $h4;
     font-weight: 800;
-    line-height: 1em;
+    line-height: 1;
     color: $primary-blue;
 }
 #alumni_headshots {
@@ -477,10 +487,10 @@ color: #dedede;
 //   h2 {
 //     font-size: 1.2rem;
 //   }
-  div {
-    font-size: 16px;
-    line-height: 1.2;
-  }
+//   div {
+//     // font-size: 16px;
+//     line-height: 1.2;
+//   }
   .btn-primary {
     min-width: auto;
   }
@@ -676,11 +686,7 @@ color: #dedede;
 }
 
 /* Large Monitors */
-@media (min-width: 992px) {
-    .alumni_container {
-        font-size: 30px;
-    }
-    
+@media (min-width: 992px) {    
     .slide h3 {
         max-width: 50%;
     }
@@ -688,6 +694,10 @@ color: #dedede;
 
 /* Med - Large Screens */
 @media (max-width: 991px) {
+    html, body {
+        font-size: 11px;
+    }
+    
     section {
         padding: 0;
     }
@@ -698,16 +708,19 @@ color: #dedede;
 
 /* Med Screens */
 @media (max-width: 768px) {
+    html, body {
+        font-size: 16px
+    }
+    h1, .h1 {
+        font-size: 2.8125rem; //45px;
+    }
+    h2, .h2 {
+        font-size: 2rem; //32px;
+    }
+    h3, .h3 {
+        font-size: 1.875rem //30px;
+    }
 
-h1, .h1 {
-    font-size: 45px;
-}
-h2, .h2 {
-    font-size: 32px;
-}
-h3, .h3 {
-    font-size: 28px;
-}
 
     .hero {
     
@@ -761,6 +774,7 @@ h3, .h3 {
     .intro-blue-box {
         p {
             padding-right: 3rem;
+            font-size: 1rem;
         }
     }
 
@@ -776,7 +790,7 @@ h3, .h3 {
 
     .checkered {
         p {
-            font-size: 16px
+            font-size: 1rem;
         }
 
         .container {
@@ -820,11 +834,11 @@ h3, .h3 {
                         }
 
                         .quote-content {
-                            font-size: 22px;
+                            font-size: 1.375rem;
                         }
 
                         .quote-by-line {
-                            font-size: 16px;
+                            font-size: 1rem;
                         }
                     }
                 }
