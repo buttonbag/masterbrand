@@ -787,6 +787,18 @@ footer a:hover {
 }
 .ll-header {
   min-height: 172px;
+  background: url(../img/_OR53785.JPG) right/150% no-repeat;
+  padding: 0 90px;
+}
+.ll-header .text-content {
+  background: #007ce0;
+  width: 50%;
+  padding: 3rem;
+  margin: 5rem 0;
+  color: white;
+}
+.ll-header .text-content p {
+  font-size: 1.125rem;
 }
 
 .checkered p {
@@ -876,6 +888,10 @@ footer a:hover {
 
   section {
     padding: 0;
+  }
+
+  .ll-header {
+    padding: 0 3rem;
   }
 
   .slide h3 {

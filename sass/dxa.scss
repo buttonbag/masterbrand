@@ -599,8 +599,23 @@ color: #dedede;
 // video
 @import "custom-video-container";
 
+// layered-learning
 .ll-header {
     min-height: 172px;
+    background: url(../img/_OR53785.JPG) right/150% no-repeat;
+    padding: 0 90px;
+
+    .text-content {
+        background: #007ce0;
+        width: 50%;
+        padding: 3rem;
+        margin: 5rem 0;
+        color: white;
+
+        p {
+            font-size: 1.125rem;
+        }
+    }
 }
 
 // checkered tiles
@@ -700,6 +715,11 @@ color: #dedede;
     
     section {
         padding: 0;
+    }
+
+    // layered-learning
+    .ll-header {
+        padding: 0 3rem;
     }
     .slide h3 {
         max-width: 60%;
