@@ -608,6 +608,9 @@ footer a:hover {
     font-size: 2rem !important;
     line-height: 1.2;
   }
+  .ready_container > div > div {
+    margin-bottom: 2rem;
+  }
 
   /*   alumni */
   .alumni_container * {
