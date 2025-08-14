@@ -153,6 +153,12 @@ margin: 20px 0;
 
 }
 
+@media (max-width: 768px) {
+.video-section .container {
+    margin: auto;
+}
+}
+
 @media (max-width: 480px) {
  .video-section {
     background: $secondary-blue;
