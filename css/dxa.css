@@ -766,6 +766,11 @@ footer a:hover {
   transform: scale(-1);
 }
 
+@media (max-width: 768px) {
+  .video-section .container {
+    margin: auto;
+  }
+}
 @media (max-width: 480px) {
   .video-section {
     background: #00205b;
