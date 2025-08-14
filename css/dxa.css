@@ -897,6 +897,10 @@ footer a:hover {
   .slide h3 {
     max-width: 60%;
   }
+
+  .carousel .quote {
+    width: 235px;
+  }
 }
 /* Med Screens */
 @media (max-width: 768px) {
@@ -942,7 +946,8 @@ footer a:hover {
     background-size: 140%;
   }
   .carousel .carousel-inner .carousel-item .quote {
-    margin: 20rem auto 0;
+    width: auto;
+    margin: 20rem 3rem 0;
     position: relative;
   }
   .carousel .carousel-inner .carousel-control-container {
@@ -1005,10 +1010,10 @@ footer a:hover {
     background-position: 55% 0% !important;
   }
   .testimonial .carousel .carousel-inner .carousel-item .quote {
-    margin: 22rem 2rem 0;
+    margin: 22rem 3rem 0;
     position: relative;
     width: auto;
-    padding: 25px;
+    padding: 28px;
   }
   .testimonial .carousel .carousel-inner .carousel-item .quote .dbl-quote::before {
     font-size: 3rem;

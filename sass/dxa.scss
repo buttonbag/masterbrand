@@ -724,6 +724,11 @@ color: #dedede;
     .slide h3 {
         max-width: 60%;
     }
+    .carousel {
+        .quote {
+            width: 235px;
+        }
+    }
 }
 
 /* Med Screens */
@@ -773,7 +778,8 @@ color: #dedede;
             background-size: 140%;
 
             .quote {
-                margin: 20rem auto 0;
+                width: auto;
+                margin: 20rem 3rem 0;
                 position: relative;
             }
         }
@@ -846,10 +852,11 @@ color: #dedede;
                     background-position: 55% 0% !important;
 
                     .quote {
-                        margin: 22rem 2rem 0;
-                        position: relative;
-                        width: auto;
-                        padding: 25px;
+                        margin: 22rem 3rem 0;
+                            position: relative;
+                            width: auto;
+                            padding: 28px;
+                        
 
                         .dbl-quote::before {
                             font-size: 3rem;
