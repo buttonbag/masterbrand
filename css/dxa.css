@@ -917,7 +917,7 @@ footer a:hover {
   }
 
   .hero {
-    background-size: 380%;
+    background-size: 180%;
     background-position: 60% 36%;
     height: 535px;
     padding: 3rem 0;
@@ -952,6 +952,10 @@ footer a:hover {
 }
 /* Small Screens */
 @media (max-width: 480px) {
+  .hero {
+    background-size: 380%;
+  }
+
   .container {
     padding: 0 2rem;
   }
