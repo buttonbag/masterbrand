@@ -50,7 +50,7 @@ $mobile-subhead: 30px;
     display: block;       
   }
 
-  .form_select select {width: 100%;}    
+  .form_select select {width: 100%; border: 1px solid rgba($primary-blue, .6); }    
 
   fieldset {width: 100%;}
 

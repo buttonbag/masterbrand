@@ -423,6 +423,7 @@ section {
 }
 .slate-form .form_select select {
   width: 100%;
+  border: 1px solid rgba(0, 61, 165, 0.6);
 }
 .slate-form fieldset {
   width: 100%;
