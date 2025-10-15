@@ -166,7 +166,10 @@ min-height: 420px;
   background-size: 140%;
   position: relative;
   overflow: hidden;
-  * {color: $white;}
+  * {
+    color: $white;
+    z-index: 2;
+}
   
   &::before {
       content: "";
@@ -179,7 +182,7 @@ min-height: 420px;
         width: 150px;
         height: 150px;
         clip-path: polygon(50% 0px, 50% 50%, 0% 50%, 0 100%, 100% 100%, 100% 0%);
-        z-index: 1;
+        z-index: 3;
     }
 
     &::after {
@@ -190,6 +193,18 @@ min-height: 420px;
         width: 900px;
         height: 13px;
         position: absolute;
+        z-index: 2;
+    }
+    .container::before {
+        content: "";
+        // background-color: rgba(0,0,0,.2);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
     }
 }
 // .mobile_hero {
@@ -610,7 +625,7 @@ color: #dedede;
     padding: 0 90px;
 
     .text-content {
-        background: #007ce0;
+        background: $light-blue;
         width: 50%;
         padding: 3rem;
         margin: 5rem 0;
